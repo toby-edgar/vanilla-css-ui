@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,87 @@
   <title>Mestservice</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+  <script src="https://use.fontawesome.com/34a553ebf8.js"></script>
 </head>
+
 <body>
 
-<!-- mobile-contaner contains all mobile content -->
-<div class="moble-container">
+  <!-- mobile-contaner contains all mobile content -->
+  <div class="mobile-container">
 
-  <!-- mobile-nav -->
-  <div class="mobile-nav">
-    <div class="burger-menu"></div><div class="logo"></div><div class="search"></div>
-  </div>
-  <!-- mobile-nav section ends -->
+    <!-- mobile-nav -->
+    <div class="mobile-nav">
+      <div class="burger-menu">
+        <h4><i class="fa fa-bars" id="mobileMenu" aria-hidden="true"></i>
+        </h4>
+      </div>
+      <div class="logo">
+        <h4>METSERVICE</h4>
+      </div>
+      <div class="search">
+        <h4><i class="fa fa-search" aria-hidden="true"></i>
+        </h4>
+      </div>
+    </div>
+    <!-- mobile-nav section ends -->
 
-  <!-- daily-section -->
-  <div class="daily-section">
-    <h3 class="current-city">wellington city</h3>
-    <div class="weather-image"></div>
-    <div class="weather-info"></div>
-  </div>
-  <!-- daily-section ends -->
+    <!-- daily-section -->
+    <div class="daily-section">
+      <h3 class="current-city">wellington city</h3>
+      <div class="weather-image">
+        <h4>
+          <i class="wi wi-day-sunny"></i>
+        </h4>
+      </div>
+      <div class="weather-info">
+        <div class="temperature">
+          <h3>22˚<h3>
+        </div>
+        <div class="line-two">
+          <p><i class="wi wi-thermometer"></i> 23˚</p>
 
-  <!-- map-section -->
-  <div class="map-section">
-    <div class="map"></div>
-    <div class="map-title"></div><div class="expand"></div>
-  </div>
-  <!-- map-section ends -->
+        </div>
+        <div class="line-three">
+          <p><i class="wi wi-thermometer-exterior"></i> 14˚</p>
+        </div>
+      </div>
+    </div>
+    <!-- daily-section ends -->
 
-  <!-- favourite-section -->
-  <div class="favourite-section">
+    <!-- map-section -->
+    <div class="map-section">
+      <div class="map"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16775.55519298!2d174.76609839602287!3d-41.286155121447074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b1fc49e974cb%3A0xa00ef63a213b470!2sWellington!5e0!3m2!1sen!2snz!4v1614032848362!5m2!1sen!2snz"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+      <div class="map-title">
+        <h5>NATIONAL FORECAST</h5>
+      </div>
+      <div class="expand">
+        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+      </div>
+    </div>
+    <!-- map-section ends -->
 
-  </div>
-  <!-- favourite-section ends -->
+    <!-- favourite-section -->
+    <div class="favourite-section">
 
-  <!-- footer-section -->
-  <footer class="footer-section">
-    <div class="left-section"></div><div class="middle-section"></div><div class="right-section"></div>
-  </footer>
-  <!-- footer-section ends -->
+    </div>
+    <!-- favourite-section ends -->
+
+    <!-- footer-section -->
+    <footer class="footer-section">
+      <div class="left-section"></div>
+      <div class="middle-section"></div>
+      <div class="right-section"></div>
+    </footer>
+    <!-- footer-section ends -->
 
   </div>
   <!-- div-container ends - containig all mobile content -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/custom.js" charset="utf-8"></script>
 </body>
+
 </html>
