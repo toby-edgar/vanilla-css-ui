@@ -67,7 +67,7 @@ padding-top: 15px;
   width:50%;
   float: left;
   position: relative;
-  border: none;
+  /* border: none; */
 }
 
 .wi-day-sunny {
@@ -90,7 +90,7 @@ padding-top: 15px;
 .temperature {
   color: #E3E1DC;
   font-size: 60px;
-  padding-top:14px;
+  padding-top: 20px;
   padding-left: 14px;
 }
 
@@ -98,8 +98,9 @@ padding-top: 15px;
 .line-three {
   height: 20%;
   padding-left: 14px;
-  font-size: 20px;
-  padding-top: 25px;
+  font-size: 15px;
+  padding-top: 35px;
+
 }
 
 /* daily section ends */
@@ -161,4 +162,72 @@ padding-top: 15px;
   float: left;
   width: 33.3%;
   height: 100%;
+}
+
+
+/* media query begin */
+
+/* this applies to mobilephones */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+
+  .daily-section {
+    /* background-color: red; */
+  }
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .daily-section {
+    /* background-color: blue; */
+  }
+
+  .temperature {
+    float: left;
+    font-size: 150px;
+    padding-right: 50px;
+  }
+
+  .current-city {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+
+  .weather-image {
+    width: 40%;
+  }
+  .weather-info{
+    width: 60%;
+  }
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .daily-section {
+    /* background-color: green; */
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .daily-section{
+    /* background-color: yellow; */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .daily-section {
+    /* background-color: pink; */
+  }
 }
